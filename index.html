@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Scheduler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Job Scheduler</h1>
+        <div class="form-group">
+            <input type="text" id="jobName" placeholder="Job Name">
+            <input type="number" id="jobPriority" placeholder="Priority (1-10)" min="1" max="10">
+            <button onclick="addJob()">Add Job</button>
+        </div>
+        <div class="job-list">
+            <h2>Job Queue</h2>
+            <ul id="jobQueue"></ul>
+        </div>
+        <button onclick="executeJobs()">Execute Jobs</button>
+        <div class="log">
+            <h2>Execution Log</h2>
+            <ul id="executionLog"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
